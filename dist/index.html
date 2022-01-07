@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Mini Project</title>
   </head>
-  <body class="bg-gray-50 debug-screens">
-     <div class="container min-h-screen px-6 py-8 mx-auto">
+  <body class="debug-screens">
+     <div class="container min-h-screen px-6 py-8 mx-auto dark:text-gray-100 dark:bg-gray-900">
        <section id="header"> 
         <div class="text-center ">
-          <h1 class="text-mainColor">Amy Gonzales home training <br> I'll get you in shape!</h1>
-          <h2>Muscle building • Functional training • Nutritional advice</h2>
+          <h1 class="leading-snug">Amy Gonzales home training <br>
+            <span class="text-2xl italic text-indigo-900 sm:text-4xl lg:text-7xl opacity-80 dark:text-indigo-100">
+              <q>&nbsp;I'll get you in shape!&nbsp;</q>
+            </span>
+          </h1>
+          <h2>Muscle building • Functional training <br class="sm:hidden"> <span class="hidden sm:inline">•</span> Nutritional advice</h2>
         </div>
        </section>
        
-       <section class="grid grid-cols-2 gap-5 mt-8 xl:w-9/12 md:gap-10 xl:mx-auto" id="image_services">
-        <div class="ml-auto" id = "image">
+       <section class="grid mt-8 sm:grid-cols-2 sm:gap-5 xl:w-9/12 md:gap-10 xl:mx-auto" id="image_services">
+        <div class="mx-auto sm:ml-auto mb-7 sm:mb-0" id = "image">
           <img src = "img/tom.jpg" alt = "Amy Gonzales Online Training">
         </div>  
 
@@ -62,7 +66,7 @@
          <div class="flex justify-around lg:mx-auto lg:w-8/12 xl:w-7/12 ">
           <div id = "email">
             <p>Your message:</p>
-            <a class="flex items-center px-4 py-2 mt-2 transition bg-gray-300 rounded shadow-sm hover:text-white hover:bg-gray-400 hover:shadow-none" href="#">
+            <a class="flex items-center px-4 py-2 mt-2 transition bg-gray-300 rounded shadow-sm dark:hover:text-white dark:hover:bg-gray-400 dark:bg-white dark:text-indigo-900 hover:text-white hover:bg-gray-400 hover:shadow-none" href="#">
               <svg class="h-5 mr-1" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
@@ -72,7 +76,7 @@
           </div>
           <div id = "whatsApp_telefon">
             <p>WhatsApp:</p>
-            <span class="text-lg 2xl:text-xl">1 222 555 44 33</span>
+            <span class="text-lg 2xl:text-xl dark:text-gray-100">1 222 555 44 33</span>
           </div>
         </div>
        </section>
