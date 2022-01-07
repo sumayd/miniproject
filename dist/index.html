@@ -13,17 +13,35 @@
      <div class="container fixed inset-0 min-h-screen px-6 py-8 mx-auto overflow-y-scroll dark:text-gray-100 dark:bg-gray-900">
       <header class="relative flex items-center justify-between">
         <div id="left-top">
-          logggg
+          LOGO
         </div>
         <div class="flex items-center" id="right-top">
-          <nav class="flex items-center">
+          
+          <nav id="desktop-nav" class="items-center hidden md:flex">
               <a href="#">My Account</a>
               <a href="#">Blog</a>
               <a href="#">Faq</a>
               <a href="#">About Us</a>
           </nav>
+          
+        <div x-data="{ open: false }" id="mobile-nav" class="relative">
+          <button x-on:click="open = ! open" class="px-3 pt-2 md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+          
+          <nav :class="open ? '' : 'hidden'" class="absolute z-10 p-7 text-base text-gray-900 bg-white rounded-lg shadow-lg right-0.5 w-max top-10 dark:bg-gray-800 dark:text-gray-400 dark:highlight-white/5">
+            <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
           <div class="flex items-center">
-          <button @click="dark = !dark" class="btn btn-icon">
+          <button @click="dark = !dark" class="btn-icon">
             <svg x-show="!dark" class="h-6 mr-1 text-indigo-800" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
               <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
             </svg>

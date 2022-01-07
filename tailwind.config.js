@@ -14,6 +14,9 @@ module.exports = {
         },
       colors: {
         mainColor: '#212f49'
+      },
+      zIndex: {
+        '100': '100',
       }
     },
   },
