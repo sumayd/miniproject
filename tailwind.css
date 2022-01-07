@@ -20,7 +20,7 @@
         @apply mb-6 text-2xl font-bold sm:text-5xl xl:text-6xl font-headline text-mainColor dark:text-gray-50;
     }
     h2 {
-        @apply mb-3 text-lg font-bold sm:text-2xl md:text-3xl xl:text-4xl font-headline text-mainColor dark:text-gray-50;
+        @apply mb-3 text-lg font-bold sm:text-2xl xl:text-5xl font-headline text-mainColor dark:text-gray-50;
     }
     h3 {
         @apply mb-4 text-xl font-bold md:mb-2 md:text-2xl xl:text-3xl font-headline text-mainColor dark:text-gray-50;
@@ -32,15 +32,24 @@
         @apply mb-4 text-lg md:text-xl xl:text-2xl dark:text-gray-100;
     }
     .btn {
-        @apply rounded shadow-sm transition hover:shadow-none px-3 py-2 dark:text-white
+        @apply px-6 py-3 transition rounded-md shadow-sm hover:shadow-none dark:text-white;
     }
     .btn-icon {
-        @apply flex items-center
+        @apply flex items-center;
     }
     .btn-gray {
-        @apply bg-gray-300 hover:bg-gray-400 dark:bg-gray-400 dark:hover:bg-gray-500
+        @apply bg-gray-300 hover:bg-gray-400 dark:bg-gray-400 dark:hover:bg-gray-500;
+    }
+    .btn-green{
+        @apply bg-green-700 hover:bg-green-800;
     }
     .btn-indigo {
-        @apply bg-indigo-300 hover:bg-indigo-400 dark:bg-indigo-400 dark:hover:bg-indigo-500
+        @apply bg-indigo-300 hover:bg-indigo-400 dark:bg-indigo-400 dark:hover:bg-indigo-500;
+    }
+    .btn-yellow{
+        @apply bg-yellow-400 hover:bg-yellow-500;
+    }
+    a{
+        @apply mb-0 mr-5 text-base transition hover:text-indigo-900 dark:hover:text-indigo-100; 
     }
 }
