@@ -8,7 +8,7 @@
     <title>Mini Project</title>
   </head>
   <body class="bg-gray-50 debug-screens">
-     <div class="container min-h-screen px-6 py-8 mx-auto bg-gray-100 ">
+     <div class="container min-h-screen px-6 py-8 mx-auto">
        <section id="header"> 
         <div class="text-center ">
           <h1 class="text-mainColor">Amy Gonzales home training <br> I'll get you in shape!</h1>
@@ -16,7 +16,7 @@
         </div>
        </section>
        
-       <section class="grid grid-cols-2 gap-5 mt-8 md:gap-10" id="image_services">
+       <section class="grid grid-cols-2 gap-5 mt-8 xl:w-9/12 md:gap-10 xl:mx-auto" id="image_services">
         <div class="ml-auto" id = "image">
           <img src = "img/tom.jpg" alt = "Amy Gonzales Online Training">
         </div>  
@@ -31,32 +31,35 @@
             <li>Tailored nutrition plans</li>
           </ul>
           <!-- Only for <= md -->
-          <h3 class="hidden mt-5 md:mt-10 md:block">My qualifications:</h3>
-            <ul class="hidden ml-6 list-disc md:block">
-              <li>Certified nutritionist</li>
-              <li>Certified fitness trainer</li>
-              <li>5 years of experience in 1: 1 training</li>
-            </ul>
+          <section id="quali_right" class="hidden md:block">
+            <h3 class="mt-5 md:mt-10">My qualifications:</h3>
+              <ul class="ml-6 list-disc">
+                <li>Certified nutritionist</li>
+                <li>Certified fitness trainer</li>
+                <li>5 years of experience in 1: 1 training</li>
+              </ul>
+          </section>
         </div>
        </section>
       <!-- Only for <= sm -->
-       <h3 class="mt-10 md:hidden">My qualifications:</h3>
-            <ul class="ml-6 list-disc md:hidden">
+      <section id="quali_bottom" class="md:hidden">   
+          <h3 class="mt-5 md:mt-10">My qualifications:</h3>
+            <ul class="ml-6 list-disc">
               <li class="leading-5 md:leading-normal">Certified nutritionist</li>
               <li class="leading-5 md:leading-normal">Certified fitness trainer</li>
               <li class="leading-5 md:leading-normal">5 years of experience in 1: 1 training</li>
             </ul>
-       
+      </section>
        <section class="mt-8" id="price_payment">
-        <div class="mx-auto md:w-8/12">
-          <h2>Prices and payment</h2>
+        <div class="mx-auto lg:w-8/12 xl:w-7/12">
+          <h2 class="xl:text-3xl">Prices and payment</h2>
           <p>My most important goal is that you get ahead with your goals.</p>
-          <p>In a free opening session we will discuss what you want to achieve and how much you can or want to spend. Then we are guaranteed to find a solution that suits you.</p>
+          <p class="text-justify">In a free opening session we will discuss what you want to achieve and how much you can or want to spend. Then we are guaranteed to find a solution that suits you.</p>
         </div>
        </section>
       
        <section class="mt-8 mb-10" id="contact">
-         <div class="grid grid-cols-2 gap-4 md:mx-auto md:w-8/12">
+         <div class="flex justify-around lg:mx-auto lg:w-8/12 xl:w-7/12 ">
           <div id = "email">
             <p>Your message:</p>
             <a class="flex items-center px-4 py-2 mt-2 transition bg-gray-300 rounded shadow-sm hover:text-white hover:bg-gray-400 hover:shadow-none" href="#">
@@ -64,12 +67,12 @@
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
-              <span>Send an Email</span>
+              <span class="text-lg 2xl:text-xl">Send an Email</span>
             </a>
           </div>
           <div id = "whatsApp_telefon">
             <p>WhatsApp:</p>
-            1 222 555 44 33
+            <span class="text-lg 2xl:text-xl">1 222 555 44 33</span>
           </div>
         </div>
        </section>
