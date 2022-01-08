@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-    enabled: true,
+    enabled: false,
     content: ['./dist/**/*.html'],
   }, 
   darkMode: 'class',
@@ -20,10 +20,14 @@ module.exports = {
       }
     },
   },
+  corePlugins: {
+    float: false,
+  },
   variants: {
     extend: {},
   },
   plugins: [
     require('tailwindcss-debug-screens'),
+    require('@tailwindcss/forms'),
   ],
 }

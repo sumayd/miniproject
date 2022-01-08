@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <title>Mini Project</title>
   </head>
-  <body class="overflow-hidden debug-screens">
+  <body class="overflow-hidden">
      <div class="container fixed inset-0 min-h-screen px-6 py-8 mx-auto overflow-y-scroll dark:text-gray-100 dark:bg-gray-900">
       <header class="relative flex items-center justify-between">
         <div id="left-top">
@@ -98,7 +98,7 @@
               <li class="leading-5 md:leading-normal">5 years of experience in 1: 1 training</li>
             </ul>
       </section>
-       <section class="mt-8" id="price_payment">
+       <section class="mt-8 mb-14" id="price_payment">
         <div class="mx-auto lg:w-8/12 xl:w-7/12">
           <h2 class="xl:text-3xl">Prices and payment</h2>
           <p>My most important goal is that you get ahead with your goals.</p>
@@ -106,7 +106,7 @@
         </div>
        </section>
       
-       <section class="mt-8 mb-10" id="contact">
+       <section class="" id="contact">
          <div class="flex justify-around lg:mx-auto lg:w-8/12 xl:w-7/12 ">
           <div id = "take_the_quiz">
             <a class="btn btn-green" href="#">
@@ -119,6 +119,48 @@
             </a>
           </div>
         </div>
+       </section>
+       <section id="contact" class="mx-auto sm:p-20 lg:w-8/12 xl:w-7/12">
+         <div class="mx-auto sm:ml-auto mb-7 sm:mb-0">
+          <h2 class="m-10 text-center">Contact Us</h2>
+           <div class="grid grid-cols-1 gap-6">
+            <label class="block">
+              <span>Full name</span>
+              <input type="text" class="dark-text input-s" placeholder="">
+            </label>
+            <label class="block">
+              <span>Email address</span>
+              <input type="email" placeholder="john@example.com" class="dark-text input-s">
+            </label>
+            <label class="block">
+              <span>When?</span>
+              <input type="date" class="dark-text input-s">
+            </label>
+            <label class="block">
+              <span>What type of?</span>
+              <select class="block w-full mt-1 border-gray-300 rounded-md shadow-sm dark-text focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                <option>Choose</option>
+                <option>Diet</option>
+                <option>Spor</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label class="block">
+              <span>Additional details</span>
+              <textarea class="block w-full mt-1 border-gray-300 rounded-md shadow-sm dark-text focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" rows="3"></textarea>
+            </label>
+            <div class="block">
+              <div class="mt-2">
+                <div>
+                  <label class="inline-flex items-center">
+                    <input type="checkbox" class="text-indigo-600 border-gray-300 rounded shadow-sm focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50" checked="">
+                    <span class="ml-2">Email me news and special offers</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
        </section>
        <footer class="flex pt-3 border-t-2">
         <a href="#">
